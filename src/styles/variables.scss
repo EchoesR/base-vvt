@@ -1,0 +1,36 @@
+$text-black: #333;
+
+@mixin flex {
+  display: flex;
+}
+
+@mixin flex-center {
+  @include flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin flex-center-main {
+  @include flex;
+  justify-content: center;
+}
+
+@mixin flex-center-sub {
+  @include flex;
+  align-items: center;
+}
+
+@mixin hide-scrollbar {
+  -webkit-overflow-scrolling: touch;
+  scroll-behavior: smooth;
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+@mixin limit-text-line($lines: 2) {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: $lines;
+  overflow: hidden;
+}
