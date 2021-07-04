@@ -2,7 +2,7 @@ import type { App } from 'vue'
 import { createStore } from 'vuex'
 
 const store = createStore({
-  modules: {}
+  modules: {},
 })
 
 export default store

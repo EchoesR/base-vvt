@@ -1,13 +1,10 @@
 import { defineComponent } from 'vue'
+
 export default defineComponent({
   props: {
-    message: String
+    message: String,
   },
   setup(props) {
-    return () => {
-      return (
-        <div>{ props.message }</div>
-      )
-    }
-  }
+    return () => <div>{props.message}</div>
+  },
 })

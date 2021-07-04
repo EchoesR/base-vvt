@@ -4,7 +4,7 @@ import { setupStore } from './store'
 import App from './App.vue'
 import '@/styles/index.scss'
 
-const app =  createApp(App)
+const app = createApp(App)
 ;(async () => {
   console.log(import.meta.env)
   setupRouter(app)
@@ -12,4 +12,3 @@ const app =  createApp(App)
   await router.isReady()
   app.mount('#app')
 })()
-

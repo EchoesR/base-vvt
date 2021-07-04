@@ -8,16 +8,16 @@ export default defineConfig({
   plugins: [vue(), vueJsx()],
   resolve: {
     alias: {
-      '@': resolve(__dirname, 'src')
-    }
+      '@': resolve(__dirname, 'src'),
+    },
   },
   // 设置打包路径
   base: './',
   css: {
     preprocessorOptions: {
       scss: {
-        additionalData: `@import "./src/styles/variables.scss";`
-      }
-    }
-  }
+        additionalData: `@import "./src/styles/variables.scss";`,
+      },
+    },
+  },
 })
