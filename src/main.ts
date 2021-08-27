@@ -6,7 +6,7 @@ import '@/styles/index.scss'
 
 const app = createApp(App)
 ;(async () => {
-  console.log(import.meta.env)
+  console.log(import.meta)
   setupRouter(app)
   setupStore(app)
   await router.isReady()

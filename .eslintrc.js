@@ -19,5 +19,6 @@ module.exports = {
     'import/no-absolute-path': 'off',
     'import/no-extraneous-dependencies': 'off',
     'vue/no-multiple-template-root': 'off',
+    'vue/script-setup-uses-vars': 'off'
   },
 }

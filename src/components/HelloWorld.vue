@@ -1,23 +1,37 @@
 <template>
   <h1>{{ msg }}</h1>
+  <p>
+    <button @click="handleAdd">add</button>
+    {{ count }}
+  </p>
 </template>
 
-<script lang="ts">
-import { ref, defineComponent } from 'vue'
+<script lang="ts" setup>
+import { ref, defineProps } from 'vue'
 
-export default defineComponent({
-  name: 'HelloWorld',
-  props: {
-    msg: {
-      type: String,
-      required: true,
-    },
-  },
-  setup: () => {
-    const count = ref(0)
-    return { count }
+defineProps({
+  msg: {
+    type: String,
+    required: true,
   },
 })
+const count = ref<number>(0)
+const handleAdd = () => {
+  count.value += 1
+}
+// export default defineComponent({
+//   name: 'HelloWorld',
+//   props: {
+//     msg: {
+//       type: String,
+//       required: true,
+//     },
+//   },
+//   setup: () => {
+//     const count = ref(0)
+//     return { count }
+//   },
+// })
 </script>
 
 <style scoped>

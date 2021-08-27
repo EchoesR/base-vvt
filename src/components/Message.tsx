@@ -1,10 +1,13 @@
-import { defineComponent } from 'vue'
+import { defineComponent, getCurrentInstance } from 'vue'
 
 export default defineComponent({
   props: {
     message: String,
   },
-  setup(props) {
+  setup(props, ctx) {
+    const internalInstance = getCurrentInstance()
+    console.log('internalInstance::', internalInstance)
+    console.log(ctx)
     return () => <div>{props.message}</div>
   },
 })
