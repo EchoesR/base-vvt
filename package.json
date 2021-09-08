@@ -9,13 +9,13 @@
     "commit": "git cz",
     "lint": "eslint ./src --ext .vue,.js,.ts,.tsx,.jsx",
     "lint-fix": "eslint --fix ./src --ext .vue,.js,.ts,.tsx,.jsx",
-    "prettier-format": "prettier --write .",
+    "prettier-format": "prettier --write ./src",
     "prepare": "husky install"
   },
   "lint-staged": {
     "src/**/*.{js,jsx,ts,tsx,vue}": [
-      "yarn run prettier-format",
-      "yarn run lint-fix"
+      "npm run prettier-format",
+      "npm run lint-fix"
     ]
   },
   "dependencies": {
