@@ -12,3 +12,5 @@ const app = createApp(App)
   await router.isReady()
   app.mount('#app')
 })()
+
+console.log('1')
