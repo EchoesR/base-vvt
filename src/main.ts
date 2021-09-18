@@ -14,3 +14,5 @@ const app = createApp(App)
 })()
 
 console.log('1')
+
+console.log('2')
